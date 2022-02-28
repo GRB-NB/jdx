@@ -1,6 +1,6 @@
 # 主分支 [master](https://github.com/grbnb/jdx/tree/master)
 
-# 通过reposync方式进行代码同步
+# 通过reposync方式进行代码同步到主分支
 
 
 ### 申请PAT
