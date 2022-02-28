@@ -1,55 +1,24 @@
-# JDX
+# 通过reposync方式进行代码同步
 
-## 特别声明:
 
-1. 本仓库涉及的任何解锁和解密分析脚本或代码，仅用于测试和学习研究，禁止用于商业用途，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断.
-2. 请勿将本项目的任何内容用于商业或非法目的，否则后果自负.
-3. 如果任何单位或个人认为该项目的脚本可能涉嫌侵犯其权利，则应及时通知并提供身份证明，所有权证明，我们将在收到认证文件后删除相关代码.
-4. 任何以任何方式查看此项目的人或直接或间接使用本仓库项目的任何脚本的使用者都应仔细阅读此声明。rubyangxg 保留随时更改或补充此免责声明的权利。一旦使用并复制了任何本仓库项目的规则，则视为您已接受此免责声明.
-5. 您必须在下载后的24小时内从计算机或手机中完全删除以上内容.
-6. 您使用或者复制了本仓库且本人制作的任何脚本，则视为已接受此声明，请仔细阅读
+### 申请PAT
 
-## 安装说明
+[点此来生成一个 token](https://github.com/settings/tokens/new) ，把 `repo`和`workflow` 两部分勾上，然后点击最下面的创建按钮。
 
-本项目已打包成`docker`镜像，拉取配置即可使用
-> docker安装方法不再赘述
+### 填写PAT到Secrets
 
-### 1. 拉取并运行docker
+申请完毕后，在分支中点击`Settings`-`Secrets`-`New secret`
 
-```dockerfile
-docker run -d \
-    -v <config dir>:/jdx/config \
-    -p <port>:80 \
-    --restart=always \
-    --name jdx registry.cn-hangzhou.aliyuncs.com/yiidii-hub/jdx:v0.1.8
-```
-> 这里命令自行替换卷和端口映射
-> 
-> 例如：
-> ```dockerfile
-> docker run -d \
->   -v  /data/jdx/config:/jdx/config \
->   -p 5702:80 \
->   --restart=always \
->   --name jdx registry.cn-hangzhou.aliyuncs.com/yiidii-hub/jdx:v0.1.8
-> ```
-> 
-注意：
- - 记得放行端口
+`name`填`PAT`，`Value`填入上方申请到的PAT,保存即可
 
-### 访问
-这时候访问 `http://ip:port/` 就能访问了
+### 手动触发一次代码同步
 
-### 后台登录
-首次登录用户名：`admin`, 密码：`123465`
+点击`Actions`,点击右上角的star运行所有脚本
 
-## 使用说明
-1. QL配置只能删除和新增，不能编辑操作
-2. 所有涉及编辑和删除的操作，左滑即可（就像微信删除最近联系人一样...）
+等待两分钟左右,能够发现代码全部同步过来
 
-## 更新说明
-1. 停止并删除容器
-```shell
-docker stop jdx && docker rm jdx
-```
-2. 根据最新版本号跑一个新的容器即可
+## Enjoy
+
+操作到这一步,表示您已经全部完成了
+
+剩下的去配置cookie等secrets就好啦
