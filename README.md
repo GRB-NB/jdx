@@ -1,4 +1,4 @@
-# 主分支 [master](https://github.com/grbnb/jdx/tree/master)
+# 主分支 [master](https://github.com/grbnb/jdx/tree/0.2.4)
 
 # 通过reposync方式进行代码同步到主分支
 
