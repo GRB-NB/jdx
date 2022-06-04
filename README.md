@@ -1,5 +1,11 @@
-# 主分支 [master](https://github.com/grbnb/jdx/tree/0.2.4)
+# 版本主分支[点击跳转]
 
+| 版本号 |
+| - |
+| [0.2.4](https://github.com/grbnb/jdx/tree/0.2.4) |
+| [0.1.9](https://github.com/grbnb/jdx/tree/0.1.9) |
+
+# 当前为同步分支
 # 通过reposync方式进行代码同步到主分支
 
 
@@ -15,12 +21,4 @@
 
 ### 手动触发一次代码同步
 
-点击`Actions`,点击右上角的star运行所有脚本
-
 等待两分钟左右,能够发现代码全部同步过来
-
-## Enjoy
-
-操作到这一步,表示您已经全部完成了
-
-剩下的去actions就好啦
