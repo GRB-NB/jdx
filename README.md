@@ -3,6 +3,7 @@
 | 版本号 |
 | - |
 | [0.2.4](https://github.com/grbnb/jdx/tree/0.2.4) |
+| [0.2.3](https://github.com/grbnb/jdx/tree/0.2.3) |
 | [0.1.9](https://github.com/grbnb/jdx/tree/0.1.9) |
 
 # 当前为同步分支
